@@ -1,0 +1,24 @@
+* {
+    box-sizing: border-box;
+  }
+  
+ 
+  ul {
+    display: flex;
+    justify-content: row;
+    flex-wrap: wrap;
+    gap: 24px;
+    user-select: none;
+    list-style: none;
+  }
+  
+  .gallery-item {
+    list-style: none;
+      
+     }
+  
+  .gallery-image {
+    width: 360px;
+height: 200px;
+  }
+ 
