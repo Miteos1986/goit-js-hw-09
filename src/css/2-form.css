@@ -1,18 +1,15 @@
 form {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    align-content: space-around;
+   border: 1px solid black;
     border-radius: 8px;
 padding: 24px;
 width: 408px;
-height: 296px;
+height: auto;
 }
-input{
+form input, 
+form textarea {
     margin-bottom: 8px;
 }
-label {
+form > label {
     width: 360px;
     height: auto;
     font-family: "Montserrat", sans-serif;
@@ -27,7 +24,6 @@ flex-direction: column;
 gap: 10px;
 }
 button {
-    margin-top: 16px;
     border-radius: 8px;
 padding: 8px 16px;
 width: 95px;
