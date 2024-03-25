@@ -8,7 +8,7 @@
 @import url("./1-gallery.css");
 @import url('./2-form.css');
 
-section{
+.nav-list{
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
