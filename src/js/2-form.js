@@ -14,7 +14,7 @@ enteredTextarea ();
 function registeredForm() {
     const message = textarea.value.trim();
     const email = input.value.trim();
-    const allInfo = {message, email}
+    const allInfo = {email, message}
     
     localStorage.setItem(STORAGE_KEY, JSON.stringify(allInfo));
 }
@@ -31,8 +31,14 @@ function enteredTextarea (){
 
 function handleSubmit(event){
     event.preventDefault();
-    console.log("send");
 
+    const message = textarea.value.trim();
+    const email = input.value.trim();
+    const allInfo = {email, message}
+
+   
+if (email && message)  {console.log(allInfo)} 
+else {return alert("Одно из полей: Email или Massege, необходимо заполнить");} 
     event.currentTarget.reset();
     localStorage.removeItem(STORAGE_KEY)
 }
